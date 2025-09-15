@@ -3,7 +3,8 @@ import MonthlyFavorites from "@/components/features/main/Favorites/MonthlyFavori
 import HeroSection from "@/components/features/main/HeroSection";
 import TrendingNews from "@/components/features/main/Trends/TrendingNews";
 import LiveStreamPromo from "@/components/features/main/LiveStreamPromo";
-import React from "react";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
+import React, { Suspense } from "react";
 
 export default function HomePage() {
   return (
@@ -13,7 +14,9 @@ export default function HomePage() {
         <LiveStreamPromo />
         <TrendingNews />
         <MonthlyFavorites />
-        <ContentDiscovery />
+        <Suspense fallback={<LoadingSpinner />}>
+          <ContentDiscovery />
+        </Suspense>
       </div>
     </div>
   );
