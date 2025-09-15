@@ -6,9 +6,12 @@
   NODE_VERSION = "18"
   NEXT_TELEMETRY_DISABLED = "1"
 
+[functions]
+  directory = "netlify/functions"
+
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
+  from = "/api/trpc/*"
+  to = "/.netlify/functions/trpc/:splat"
   status = 200
 
 [[redirects]]

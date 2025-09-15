@@ -3,7 +3,7 @@ import DiscoverCardRow from "@/components/features/main/Discover/ContentFeed/Dis
 import Pagination from "@/components/ui/Pagination";
 import LoadingSkeleton from "@/components/ui/LoadingSkeleton";
 import { useBlogFilters } from "@/hooks/useURLState";
-import { usePaginatedDiscoverCards } from "@/hooks/usePosts";
+import { usePaginatedDiscoverCards } from "@/hooks/usePostsMock";
 import React from "react";
 
 export default function DiscoverBody({ view }: { view: "row" | "grid" }) {

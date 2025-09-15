@@ -6,7 +6,7 @@ import Section from "@/components/shared/Section";
 import Container from "@/components/shared/Container";
 import Title from "@/components/shared/Title";
 import TrendRow from "./TrendRow";
-import { useTrendingDiscoverCards } from "@/hooks/usePosts";
+import { useTrendingDiscoverCards } from "@/hooks/usePostsMock";
 
 export default function TrendingNews() {
   const { data, isLoading, error } = useTrendingDiscoverCards();

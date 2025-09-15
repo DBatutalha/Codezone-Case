@@ -4,7 +4,7 @@ import Link from "next/link";
 import DiscoverCardRow from "./DiscoverCardRow";
 import DiscoverCardGrid from "./DiscoverCardGrid";
 import DiscoverHeader from "@/components/shared/Discover/DiscoverHeader";
-import { usePaginatedDiscoverCards } from "@/hooks/usePosts";
+import { usePaginatedDiscoverCards } from "@/hooks/usePostsMock";
 import { postsToDiscoverCards } from "@/lib/api";
 import { useBlogFilters } from "@/hooks/useURLState";
 

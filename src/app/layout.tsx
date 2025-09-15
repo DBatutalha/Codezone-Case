@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     description:
       "Modern rap kültürü blog platformu. En güncel rap haberleri, müzik keşifleri ve trend analizleri.",
   },
+  other: {
+    "preload-css": "false",
+  },
 };
 
 export default function RootLayout({
