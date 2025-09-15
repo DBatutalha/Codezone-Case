@@ -39,8 +39,13 @@ export default function SearchInput({
     e.preventDefault();
 
     if (searchQuery.trim()) {
-      // Hangi sayfada olursa olsun, o sayfada arama yap
-      updateFilters({ search: searchQuery.trim() });
+      // Eğer blog sayfasında değilsek, blog sayfasına yönlendir
+      if (!window.location.pathname.startsWith('/blog')) {
+        router.push(`/blog?q=${encodeURIComponent(searchQuery.trim())}`);
+      } else {
+        // Blog sayfasındaysak, filtreleri güncelle
+        updateFilters({ search: searchQuery.trim() });
+      }
       onSearch?.(searchQuery.trim());
     } else {
       // Boş arama - search parametresini temizle

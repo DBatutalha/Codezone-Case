@@ -99,10 +99,10 @@ export default function CTO() {
           GELİŞMELERDEN İLK SEN HABERDAR OL!
         </h2>
         <div className="w-full flex justify-center items-center">
-          <form className="w-full max-w-xl bg-[#181818] rounded-xl p-2 flex items-center gap-4  relative sm:flex-col ">
+          <form className="w-full max-w-xl bg-[#181818] rounded-xl p-2 flex items-center gap-4">
             <input
               type="email"
-              className="flex-1 bg-transparent outline-none text-white font-extrabold text-base sm:text-lg placeholder-white placeholder:font-extrabold placeholder:text-base sm:placeholder:text-lg px-2 py-2 border-none pr-32 sm:pr-2"
+              className="flex-1 bg-transparent outline-none text-white font-extrabold text-base sm:text-lg placeholder-white placeholder:font-extrabold placeholder:text-base sm:placeholder:text-lg px-2 py-2 border-none"
               placeholder="EMAIL"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -111,8 +111,7 @@ export default function CTO() {
             />
             <button
               type="submit"
-              className="flex items-center gap-2 text-[#F0E74D] font-bold text-base sm:text-lg uppercase hover:underline absolute right-4 top-1/2 -translate-y-1/2 sm:relative sm:right-0 sm:top-0 sm:translate-y-0 sm:mt-4"
-              style={{ whiteSpace: "nowrap" }}
+              className="flex items-center gap-2 text-[#F0E74D] font-bold text-base sm:text-lg uppercase hover:underline whitespace-nowrap"
             >
               GÖNDER
               <span className="inline-block">

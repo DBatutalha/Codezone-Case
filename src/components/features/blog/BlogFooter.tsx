@@ -101,7 +101,7 @@ export default function BlogFooter() {
           <div className="mb-4"></div>
           <div className="flex flex-row justify-between">
             <div className="flex flex-col">
-              <h2 className="text-white text-[2.78vw] font-saira-bold uppercase mb-10 max-[428px]:text-center max-[428px]:text-2xl">
+              <h2 className="text-white text-[1.78vw] font-saira-bold uppercase mb-10 max-[428px]:text-center max-[428px]:text-2xl -mt-2">
                 GELİŞMELERDEN İLK SEN HABERDAR OL!
               </h2>
               <form className="w-full max-w-xl bg-[#181818] rounded-xl p-2 flex items-center gap-4  relative">
@@ -151,10 +151,10 @@ export default function BlogFooter() {
           </div>
         </Container>
       </Section>
-      <div className="text-[#5A5A5A] text-[1.97vw] font-saira-normal mt-4 text-left max-[428px]:text-start  max-[428px]:ml-5 ">
+      <div className="text-[#5A5A5A] text-[.60vw] ml-5 font-saira-normal mt-4 text-left max-[428px]:text-start  max-[428px]:text-[1.90vw] max-[428px]:ml-5 ">
         © RAPKOLOGY All Rights Are Reserved 2022.
       </div>
-      <div className="max-[428px]:flex items-center justify-center">
+      <div className="max-[428px]:flex items-center justify-center ml-5">
         <div className="flex flex-row  items-center gap-x-6 my-10 max-[428px]:flex max-[428px]:mr-1 max-[428px]:items-center max-[428px]:gap-y-4">
           {socials.map((social, idx) => (
             <Link className="cursor-pointer" key={idx} href={""}>
