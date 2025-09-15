@@ -1,5 +1,7 @@
 # Rapkology - Modern Rap Kültürü Blog Platformu
 
+LINK: https://codezonecase.netlify.app/
+
 Rapkology, Next.js 15 ve TypeScript kullanılarak geliştirilmiş modern bir rap kültürü blog platformudur. Proje, tRPC ile API yönetimi, Swiper ile carousel/slider işlevselliği, Tailwind CSS v4 ile stil yönetimi içerir.
 
 ## 🚀 Teknoloji Stack
@@ -286,22 +288,3 @@ interface Post {
 - **Bundle Size:** Optimized chunks
 - **Lighthouse Score:** 90+ (estimated)
 - **Core Web Vitals:** Optimized
-
-## 🔮 Gelecek Geliştirmeler
-
-- [ ] Gerçek API entegrasyonu
-- [ ] User authentication
-- [ ] Content management system
-- [ ] Social sharing
-- [ ] Newsletter integration
-- [ ] Analytics integration
-
-## 📄 Lisans
-
-Bu proje Codezone Case Study için geliştirilmiştir.
-
----
-
-**Geliştirici:** AI Assistant  
-**Tarih:** 2024  
-**Versiyon:** 1.0.0
