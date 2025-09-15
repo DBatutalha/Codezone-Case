@@ -1,0 +1,46 @@
+Next.js 14/15 kullanmanızı bekliyoruz.
+
+Figma dökümünü pixel perfect yapmanızı bekliyoruz.
+
+Gerekli yerlerde Swiper gibi kütüphaneleri kullanmanızı bekliyoruz.
+
+Verilen mock data, Next API veya tRPC üzerinden çekilecek.
+
+TypeScript kullanmanızı bekliyoruz.
+
+Bloglarda dinamik query entegrasyonu [cat, sort (latest|popular), page, q, view (grid|list) gibi]
+
+Filtre/arama/sıralama adres çubuğu ile çalışacak; geri/ileri ile durum korunacak.
+
+Dinamik SEO’ya dikkat etmenizi bekliyoruz.
+
+Animasyon kullanımınıza dikkat ediliyor olacak.
+
+Loading / error durumlarının kontrolleri sağlanmış olmalı.
+
+
+
+
+📱 Screenshot +
+🎨 Tüm renk kodları +  
+📏 Tüm ölçüler +
+📝 Tüm metinler +
+🔗 Figma linkleri
+
+link + css layers all + screenshot
+
+bölüm adı: 
+
+kurallar:
+Aşağıdaki bileşeni Next.js JSX + TailwindCSS ile pixel-perfect şekilde oluştur.
+Tüm ölçüler birebir uygulanmalı Sadece JSX + Tailwind kullan
+Yorum, açıklama veya ekstra bilgi verme Responsive gerekmez.
+ 
+figmadan gelen özellikler:
+
+
+Layout:
+
+
+
+Colors: 
