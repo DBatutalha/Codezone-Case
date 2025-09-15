@@ -415,11 +415,34 @@ export const usePostsByCategory = (category: string, sort: string = "latest") =>
   useAllPosts();
 export const usePostsByTag = (tag: string, sort: string = "latest") =>
   useAllPosts();
-export const usePostBySlug = (slug: string) => ({
-  data: undefined,
-  isLoading: false,
-  error: null,
-});
+export const usePostBySlug = (slug: string) => {
+  const [data, setData] = useState<any>();
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setIsLoading(true);
+        // Find post by slug in mock data
+        const post = mockPosts.find((p) => p.attributes.slug === slug);
+        if (post) {
+          setData(post);
+        } else {
+          setError(new Error("Post not found"));
+        }
+      } catch (err) {
+        setError(err as Error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [slug]);
+
+  return { data, isLoading, error };
+};
 export const useDiscoverCardsWithSort = (sort: string = "latest") =>
   useDiscoverCards();
 export const useDiscoverCardsByCategory = (

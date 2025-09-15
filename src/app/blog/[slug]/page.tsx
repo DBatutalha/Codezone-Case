@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BlogPostDetail from "@/components/features/blog/BlogPostDetail";
-import { usePostBySlug } from "@/hooks/usePosts";
+import { usePostBySlug } from "@/hooks/usePostsMock";
 
 interface BlogPostPageProps {
   params: {

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useTrendingPosts } from "@/hooks/usePosts";
+import { useTrendingPosts } from "@/hooks/usePostsMock";
 import { postsToDiscoverCards } from "@/lib/api";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { usePostBySlug } from "@/hooks/usePosts";
+import { usePostBySlug } from "@/hooks/usePostsMock";
 import LoadingSkeleton from "@/components/ui/LoadingSkeleton";
 import Container from "@/components/shared/Container";
 import Section from "@/components/shared/Section";
